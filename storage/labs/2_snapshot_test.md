@@ -36,6 +36,13 @@ Create a snapshot called sebc-hdfs-test
 Created snapshot /user/shahutsav3988/precious/.snapshot/sebc-hdfs-test
 ```
 
+Delete Folder
+
+```
+[hdfs@ip-172-31-1-170 yum.repos.d]$ hdfs dfs -rm -r /user/shahutsav3988/precious/
+rm: Failed to move to trash: hdfs://ip-172-31-1-170.ap-southeast-1.compute.internal:8020/user/shahutsav3988/precious: The directory /user/shahutsav3988/precious cannot be deleted since /user/shahutsav3988/precious is snapshottable and already has snapshots
+```
+
 Delete file 
 ```
 [hdfs@ip-172-31-1-170 yum.repos.d]$ hdfs dfs -rm -r /user/shahutsav3988/precious/master.zip
