@@ -35,3 +35,9 @@ Create a snapshot called sebc-hdfs-test
 [hdfs@ip-172-31-1-170 yum.repos.d]$ hdfs dfs -createSnapshot /user/shahutsav3988/precious sebc-hdfs-test
 Created snapshot /user/shahutsav3988/precious/.snapshot/sebc-hdfs-test
 ```
+
+Delete file 
+```
+[hdfs@ip-172-31-1-170 yum.repos.d]$ hdfs dfs -rm -r /user/shahutsav3988/precious/master.zip
+17/05/10 05:15:43 INFO fs.TrashPolicyDefault: Moved: 'hdfs://ip-172-31-1-170.ap-southeast-1.compute.internal:8020/user/shahutsav3988/precious/master.zip' to trash at: hdfs://ip-172-31-1-170.ap-southeast-1.compute.internal:8020/user/hdfs/.Trash/Current/user/shahutsav3988/precious/master.zip
+```
