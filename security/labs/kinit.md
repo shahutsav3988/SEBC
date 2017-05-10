@@ -1,3 +1,4 @@
+Create Database
 
 ```
 /usr/sbin/kdb5_util create -s
@@ -9,4 +10,19 @@ It is important that you NOT FORGET this password.
 Enter KDC database master key: 
 Re-enter KDC database master key to verify: 
 
+```
+
+Add Principal
+
+```
+addprinc cloudera-scm@SHAHUTSAV3988.COM
+```
+
+Add Policies
+
+```
+kadmin.local
+kadmin.local:  addpol admin
+kadmin.local:  addpol users
+kadmin.local:  addpol hosts
 ```
