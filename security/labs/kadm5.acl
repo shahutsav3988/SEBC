@@ -1,5 +1,5 @@
 
-/var/kerberos/krb5kdc/kadm5.acl 
+kadm5.acl 
 
 ```
 */admin@SHAHUTSAV3988.COM	*
